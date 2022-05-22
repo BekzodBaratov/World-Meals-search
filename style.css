@@ -1,0 +1,146 @@
+:root {
+  --text-color: #222;
+  --text-color2: #e40;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family: sans-serif;
+  background-color: #ffeee8;
+}
+.container {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+.inpItems {
+  width: 96%;
+  height: 4rem;
+  border-radius: 3rem;
+  padding-left: 2rem;
+  overflow: hidden;
+  border: 1px solid #e40;
+
+  display: flex;
+}
+.inpItems input {
+  width: 80%;
+  border: 0;
+  outline: none;
+  background-color: #ffeee8;
+}
+.inpItems input::placeholder {
+  color: var(--text-color2);
+  font-weight: 700;
+}
+.inpItems button {
+  width: 23%;
+  background-color: #e40;
+  color: #f0f0f0;
+  border: 0;
+  height: 100%;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  color: var(--text-color2);
+}
+p {
+  font-size: 2rem;
+}
+blockquote {
+  font-size: 1.6rem;
+  color: #aaa;
+}
+.mealItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  width: 80%;
+  margin-left: 10%;
+}
+.mealItem {
+  width: 100%;
+  height: 50rem;
+  text-align: center;
+  border: 1px solid var(--text-color2);
+  transition: 0.5s;
+  border-radius: 0.5rem;
+}
+.mealItem:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.39);
+}
+.mealItem .imgDiv {
+  width: 100%;
+  height: 70%;
+}
+.mealItem h2 {
+  font-size: 2rem;
+}
+.mealItem img {
+  width: 100%;
+  height: 100%;
+}
+.mealItem button {
+  width: 18rem;
+  height: 4rem;
+  border-radius: 2rem;
+  border: 0;
+  background-color: var(--text-color2);
+  color: #f0f0f0;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.mealItem button:hover {
+  box-shadow: 0 0.5rem 1rem rgba(124, 124, 124, 0.521);
+}
+.mealItem button:active {
+  transform: scale(1.05);
+}
+.mealItemCard {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  background-color: #ffeee8;
+  border: 1px solid var(--text-color2);
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+
+  display: none;
+  flex-direction: column;
+}
+.mealItemCard h2 {
+  align-self: center;
+}
+.mealItemCard .close {
+  font-size: 2rem;
+  background-color: #e40;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  color: var(--text-color);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
