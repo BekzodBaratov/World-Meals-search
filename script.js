@@ -22,7 +22,7 @@ function fetchAPI(mealName) {
     .then((res) => {
       getAllData = res.meals;
       console.log(res);
-      res.meals.forEach((meal) => {
+      res.meals?.forEach((meal) => {
         renderHTML(meal);
       });
     });
